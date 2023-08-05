@@ -1,4 +1,9 @@
 <div>
-  <h1>User Details Grid</h1>
-  <p *ngFor="let usr of users; let i=index">{{i + 1}} . {{ usr.name }}</p>
+  <div>
+    <h1>User Details Grid V11</h1>
+    <button (click)="reloadData()">Reload</button>
+  </div>
+  <div>
+    <p *ngFor="let usr of users; let i=index">{{i + 1}} . {{ usr.name }}</p>
+  </div>
 </div>
